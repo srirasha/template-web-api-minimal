@@ -1,0 +1,8 @@
+services:
+  web-my-api:
+    build:
+      context: .
+    ports:
+      - 3500:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
